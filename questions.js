@@ -1,5 +1,5 @@
 // ==========================================================================
-// 📝 《孩子给我的启示》客观题 (Objective Questions) - 10题
+// 📝 《孩子给我的启示》题目数据集
 // ==========================================================================
 
 const objectiveQuestions = [
@@ -162,5 +162,7 @@ const subjectiveQuestions = [
     }
 ];
 
-// 如果使用模块导出，取消下一行注释；若通过 script 标签引入，则全局可用
-// export { objectiveQuestions, subjectiveQuestions };
+// ⬇️ 关键：兼容 script.js 的变量名
+const quizDataList = objectiveQuestions;
+
+// export { objectiveQuestions, subjectiveQuestions, quizDataList };
